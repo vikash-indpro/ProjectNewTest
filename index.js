@@ -15,7 +15,7 @@ exports.get = function(event, context, callback) {
 };
 
 
-var port = process.env.PORT || 3000,
+//var port = process.env.PORT || 3000,
     http = require('http'),
     fs = require('fs');
 
@@ -52,4 +52,4 @@ http.createServer(function (req, res) {
       res.end();
     });
   }
-}).listen(port, '0.0.0.0');
+})
